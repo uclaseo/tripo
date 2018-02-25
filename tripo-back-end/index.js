@@ -4,7 +4,7 @@ const app = express()
 app.get('/api/hello', (req, res) => {
   console.log('from express');
   res.send({
-    hello: 'worldd'
+    hello: 'world'
   });
 })
 
