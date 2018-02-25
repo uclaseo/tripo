@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import MulThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+
 import './App.css';
-
 import Landing from './Landing/Landing';
-
+import Upcoming from './Upcoming/Upcoming';
+import Login from './Login/Login';
+import NotFound from './NotFound/NotFound';
 class App extends Component {
 
   render() {
     return (
-      <div>
-        <Landing />
-      </div>
+      <BrowserRouter>
+        <MulThemeProvider>
+          <Switch>
+            <Route exact path="/" component={Login} />
+            <Route path="/landing" component={Landing} />
+            <Route path="/upcoming" component={Upcoming} />
+            <Route component={NotFound} />
+          </Switch>
+        </MulThemeProvider>
+      </BrowserRouter>
     );
   }
 }
