@@ -1,0 +1,13 @@
+{
+  "name": "tripo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/uclaseo/tripo.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cd tripo-back-end && yarn start\" \"cd tripo-front-end && yarn start\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
