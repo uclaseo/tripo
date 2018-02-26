@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
-import { LoginWrapper, StyledLoginBox, StyledSignupBox } from './LoginStyles';
+import { LoginWrapper, LoginBox, SignupBox } from './LoginStyles';
 
 const Login = () => {
   return (
     <LoginWrapper>
-      <StyledLoginBox>
+      <LoginBox>
         <Link to="/landing">
-          <FlatButton label="Login" />
+          <FlatButton label="Login" fullWidth={true} />
         </Link>
-      </StyledLoginBox>
-      <StyledSignupBox>
+      </LoginBox>
+      <SignupBox>
         <Link to="/landing">
-          <FlatButton label="Signup" />
+          <FlatButton label="Signup" fullWidth={true} />
         </Link>
-      </StyledSignupBox>
+      </SignupBox>
     </LoginWrapper>
   )
 }

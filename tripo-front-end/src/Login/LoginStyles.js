@@ -1,27 +1,27 @@
 import styled from 'styled-components';
 
 export const LoginWrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: #009688;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  width: 600px;
+  height: 300px;
+  background-color: #00796B;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: 1.5%;
 `
 
-export const StyledLoginBox = styled.div`
-background-color: #00796B;
-width: 300px;
-height: 300px;
-text-align: center;
-border-radius: 1.5% 0 0 1.5%;
-`
-
-export const StyledSignupBox = styled.div`
-  background-color: #00796B;
-  width: 300px;
-  height: 300px;
+export const LoginBox = styled.div`
+  background-color: blue;
+  width: 40%;
   text-align: center;
-  border-radius: 0 1.5% 1.5% 0;
+`
+
+export const SignupBox = styled.div`
+  background-color: red;
+  width: 40%;
+  text-align: center;
 `
