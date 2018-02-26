@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import FlatButton from 'material-ui/FlatButton';
-
-import Create from './Create/Create';
-import Plans from './Plans/Plans';
-import { Upcoming, Wrapper, MakePlan, ViewPlans, StyledLink } from './LandingStyles';
+import { Upcoming, Wrapper, StyledLink } from './LandingStyles';
 
 export default class Landing extends Component {
 
@@ -14,15 +11,11 @@ export default class Landing extends Component {
           UPCOMING EVENTS
         </Upcoming>
         <Wrapper>
-          <StyledLink to="/upcoming" style={{flex: 1}}>
-            <MakePlan>
-              <FlatButton label="Make Plan" fullWidth={true} disableTouchRipple={true} style={{height: '300px', padding: 0}}/>
-            </MakePlan>
+          <StyledLink to="/createplan">
+              <FlatButton label="CreatePlan" fullWidth={true} disableTouchRipple={true} style={{height: '100%'}}/>
           </StyledLink>
-          <StyledLink to="/upcoming" style={{flex: 1}}>
-            {/* <ViewPlans> */}
+          <StyledLink to="/upcoming">
               <FlatButton label="View Plans" fullWidth={true} disableTouchRipple={true} style={{height: '100%'}}/>
-            {/* </ViewPlans> */}
           </StyledLink>
         </Wrapper>
 
